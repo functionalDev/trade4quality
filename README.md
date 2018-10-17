@@ -3,8 +3,9 @@ Top Secret!! Don't look!! :P
 ## TODOs
 
 ### frontend
-- Vue + Vue-CLI v3
-- Nuxt + Vuex
+- Vue + Vue-CLI v3 ![check](https://freeiconshop.com/wp-content/uploads/edd/checkmark-flat.png "check")
+- Nuxt ![check](https://freeiconshop.com/wp-content/uploads/edd/checkmark-flat.png "check")
+-  - Vuex
 - Codesplitting
 - Service Worker
    - Cache Offline Mode
@@ -28,9 +29,10 @@ Top Secret!! Don't look!! :P
 - Observables?
    - ReactiveX?
    - Firebase like?
+   - Subscription (new apollo-client)
 - Apollo client
 
-##Browser APIs / Tools for APIs
+## Browser APIs / Tools for APIs
 - Speech API
 - Speech Recognition API
 - Geolocation API
