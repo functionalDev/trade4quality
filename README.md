@@ -3,8 +3,8 @@ Top Secret!! Don't look!! :P
 ## TODOs
 
 ### frontend
-- Vue + Vue-CLI v3 ![check](https://freeiconshop.com/wp-content/uploads/edd/checkmark-flat.png "check")
-- Nuxt ![check](https://freeiconshop.com/wp-content/uploads/edd/checkmark-flat.png "check")
+- Vue + Vue-CLI v3 ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
+- Nuxt ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
 -  - Vuex
 - Codesplitting
 - Service Worker
