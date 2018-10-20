@@ -27,6 +27,7 @@ module.exports = {
     '@nuxtjs/pwa'
   ],
   oneSignal: {
+    cdn: true,
     init: {
       appId: 'MmI3M2YyMzgtNjVjNi00MDUyLTlkY2ItNWYyYjI4MjUxY2Q5',
       allowLocalhostAsSecureOrigin: true,
