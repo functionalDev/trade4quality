@@ -2,11 +2,16 @@ Top Secret!! Don't look!! :P
 
 ## TODOs
 
+### ENV
+- Git + GitHub ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
+- Zeit.co/now ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
+-- hosting with http/2 ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
+-- auto-deployment on github commit/pull-request ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
+
 ### frontend
 - Vue + Vue-CLI v3 ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
 - Nuxt ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
 -  - Vuex
-- http2 cloud hosting
 - Codesplitting
 - Service Worker
    - Cache Offline Mode

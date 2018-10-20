@@ -23,6 +23,16 @@ module.exports = {
   ** Modules
   */
   modules: [
+    '@nuxtjs/onesignal',
     '@nuxtjs/pwa'
-  ]
+  ],
+  oneSignal: {
+    init: {
+      appId: 'MmI3M2YyMzgtNjVjNi00MDUyLTlkY2ItNWYyYjI4MjUxY2Q5',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: false
+      }
+    }
+  }
 }
