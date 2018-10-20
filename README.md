@@ -6,6 +6,7 @@ Top Secret!! Don't look!! :P
 - Vue + Vue-CLI v3 ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
 - Nuxt ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
 -  - Vuex
+- http2 cloud hosting
 - Codesplitting
 - Service Worker
    - Cache Offline Mode
