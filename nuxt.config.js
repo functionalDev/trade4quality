@@ -29,7 +29,7 @@ module.exports = {
   oneSignal: {
     cdn: true,
     init: {
-      appId: 'MmI3M2YyMzgtNjVjNi00MDUyLTlkY2ItNWYyYjI4MjUxY2Q5',
+      appId: 'c62ce64e-13a5-46e9-bda8-bf0bb90bdebe',
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
         disable: false

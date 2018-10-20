@@ -5,8 +5,9 @@
   "author": "Paul <pstolz2s@gmail.com>",
   "private": true,
   "dependencies": {
-    "nuxt": "latest",
-    "@nuxtjs/pwa": "latest"
+    "@nuxtjs/onesignal": "^2.6.0",
+    "@nuxtjs/pwa": "latest",
+    "nuxt": "latest"
   },
   "scripts": {
     "dev": "nuxt",
