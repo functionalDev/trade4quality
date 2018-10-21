@@ -1,16 +1,9 @@
 <template>
   <section class="container">
     User
+    <button type="button" name="button" @click="subscribe">Subscribe</button>
     {{
-      this.$OneSignal.push(() => {
-        this.$OneSignal.isPushNotificationsEnabled((isEnabled) => {
-          if (isEnabled) {
-            console.log('Push notifications are enabled!')
-          } else {
-            console.log('Push notifications are not enabled yet.')
-          }
-        })
-      })
+
     }}
   </section>
 </template>
@@ -24,6 +17,19 @@
       WithOfflineListener,
       OfflineIndicator
     },
+    methods: {
+      subscribe() {
+        this.$OneSignal.push(() => {
+          this.$OneSignal.isPushNotificationsEnabled((isEnabled) => {
+            if (isEnabled) {
+              console.log('Push notifications are enabled!')
+            } else {
+              console.log('Push notifications are not enabled yet.')
+            }
+          })
+        })
+      }
+    }
   }
 </script>
 
