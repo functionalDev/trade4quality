@@ -6,11 +6,18 @@ module.exports = {
     node: true
   },
   extends: 'standard',
+  // extends: [
+  //   // add more generic rulesets here, such as:
+  //   'eslint:recommended',
+  //   // 'plugin:vue/essential'
+  // ],
   // required to lint *.vue files
   plugins: [
     'html'
   ],
-  // add your custom rules here
-  rules: {},
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "semi": ["error", "always"]
+  },
   globals: {}
 }

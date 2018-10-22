@@ -3,16 +3,17 @@ Top Secret!! Don't look!! :P
 ## TODOs
 
 ### ENV
-- Git + GitHub ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
-- Zeit.co/now ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
--- hosting with http/2 ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
--- auto-deployment on github commit/pull-request ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
+- ~~Git + GitHub~~
+- ~~Zeit.co/now~~
+-- ~~hosting with http/2~~
+-- ~~auto-deployment on github commit/pull-request~~
 
 ### frontend
-- Vue + Vue-CLI v3 ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
-- Nuxt ![](https://cdn4.iconfinder.com/data/icons/gnome-desktop-icons-png/PNG/32/Dialog-Apply-32.png)
+- ~~Vue + Vue-CLI v3~~
+- ~~Nuxt~~
 -  - Vuex
 - Codesplitting
+  -
 - Service Worker
    - Cache Offline Mode
       - static files
@@ -23,20 +24,17 @@ Top Secret!! Don't look!! :P
       ``` js
       # TODO configure workbox
       ```
-   - (Push) Notification
-   ``` js
-   # already included in nuxt/pwa (TODO  activate)
-   # module: OneSignal
-   ```
+   - (Push) Notification7
+     - ~~one signal~~
+     - backend sending notifications
+     - icon/badge/actions
    - Background Sync
    - Pre-Fetching resources
+- TypeScript
 - Tracking
 - Extract stuff into Webworkers
-- Observables?
-   - ReactiveX?
-   - Firebase like?
-   - Subscription (new apollo-client)
-- Apollo client
+- ~~Apollo client~~
+   - ~~Subscription (new apollo-client)~~
 
 ## Browser APIs / Tools for APIs
 - Speech API

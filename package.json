@@ -5,9 +5,15 @@
   "author": "Paul <pstolz2s@gmail.com>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc2.3",
     "@nuxtjs/onesignal": "^2.6.0",
     "@nuxtjs/pwa": "latest",
-    "nuxt": "latest"
+    "apollo-cache-inmemory": "^1.3.5",
+    "apollo-link-http": "^1.5.5",
+    "apollo-link-ws": "^1.0.9",
+    "graphql-tag": "^2.10.0",
+    "nuxt": "latest",
+    "subscriptions-transport-ws": "^0.9.15"
   },
   "scripts": {
     "dev": "nuxt",
@@ -20,11 +26,12 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.15.0",
+    "eslint": "^3.19.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-html": "^2.0.0",
     "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^2.0.1"
+    "eslint-plugin-standard": "^2.0.1",
+    "eslint-plugin-vue": "^5.0.0-beta.3"
   }
 }
