@@ -8,9 +8,9 @@ export default (ctx) => {
   let link = null;
 
   if (!process.browser) {
-    link = new HttpLink({ uri: 'https://trade4qualityservice-avythvdlla.now.sh/graphql' });
+    link = new HttpLink({ uri: 'https://trade4qualityservice.now.sh/graphql' });
   } else {
-    const client = new SubscriptionClient('wss://trade4qualityservice-avythvdlla.now.sh/graphql', {
+    const client = new SubscriptionClient('wss://trade4qualityservice.now.sh/graphql', {
       reconnect: true,
     });
 
