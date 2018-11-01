@@ -1,3 +1,5 @@
+require('dotenv').config({ path: `.env${process.env.NODE_ENV === 'production' ? '.production' : ''}` });
+
 module.exports = {
   /*
   ** Build configuration
@@ -36,7 +38,29 @@ module.exports = {
   ],
   apollo: {
     clientConfigs: {
-      default: '../config/apolloClient.js',
+      // default: '../config/apolloClient.js',
+      default: {
+        // required
+        httpEndpoint: process.env.HTTP_ENDPOINT,
+        // optional
+        // See https://www.apollographql.com/docs/link/links/http.html#options
+        httpLinkOptions: {
+          credentials: 'same-origin',
+        },
+        // You can use `wss` for secure connection (recommended in production)
+        // Use `null` to disable subscriptions
+        wsEndpoint: process.env.WS_ENDPOINT, // optional
+        // LocalStorage token
+        tokenName: 'apollo-token', // optional
+        // Enable Automatic Query persisting with Apollo Engine
+        persisting: false, // Optional
+        // Use websockets for everything (no HTTP)
+        // You need to pass a `wsEndpoint` for this to work
+        websocketsOnly: false, // Optional
+      },
+      production: {
+        httpEndpoint: 'http://localhost:5000/graphql',
+      },
     },
   },
   oneSignal: {

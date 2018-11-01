@@ -44,6 +44,7 @@ export default {
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
+    box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.2);
   }
   .logo {
     margin-right: auto;

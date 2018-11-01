@@ -18,10 +18,7 @@
 </template>
 
 <script>
-import gql from 'graphql-tag'
-
-import WithOfflineListener from '~/components/WithOfflineListener.vue';
-import OfflineIndicator from '~/components/OfflineIndicator.vue';
+import gql from 'graphql-tag';
 const messageQuery = gql`
   {
     messages {
@@ -31,10 +28,6 @@ const messageQuery = gql`
   }`;
 
   export default {
-    components: {
-      WithOfflineListener,
-      OfflineIndicator
-    },
     data() {
       return {
         inMessage: '',
@@ -65,9 +58,6 @@ const messageQuery = gql`
           // they are reactive
           // Mutate the previous result
           updateQuery: (previousResult, { subscriptionData }) => {
-            // Here, return the new result from the previous with the new data
-            console.log('subscriptionData', subscriptionData.data);
-            console.log('previousResult', ...previousResult.messages);
             return previousResult.messages.push(subscriptionData.data.messageAdded);
           },
         }

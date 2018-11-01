@@ -7,24 +7,34 @@ Top Secret!! Don't look!! :P
 - ~~Zeit.co/now~~
 -- ~~hosting with http/2~~
 -- ~~auto-deployment on github commit/pull-request~~
+- ~~config for DEV, PROD~~
+
+
+### performance
+- code splitting
+  - on component level?
+  - on route level?
+- cache for offline usage (Service Worker)
+  - ~~static files~~
+  - backend data
+
+### GraphQL
+- Apollo client
+- Subscriptions
+  - ~~query + endpoint~~
+  - ~~WebSocket~~
+    - ~~only for Client mode~~
+    - ~~SSR uses HTTP~~
+  - only use websocket for subscriptions
+    - other calls use GET/POST
+  - cache websocket data?
 
 ### frontend
 - ~~Vue + Vue-CLI v3~~
 - ~~Nuxt~~
 -  - Vuex
-- Codesplitting
-  -
 - Service Worker
-   - Cache Offline Mode
-      - static files
-      ``` js
-      # already included in nuxt/pwa
-      ```
-      - backend data
-      ``` js
-      # TODO configure workbox
-      ```
-   - (Push) Notification7
+   - (Push) Notifications
      - ~~one signal~~
      - backend sending notifications
      - icon/badge/actions
@@ -33,8 +43,6 @@ Top Secret!! Don't look!! :P
 - TypeScript
 - Tracking
 - Extract stuff into Webworkers
-- ~~Apollo client~~
-   - ~~Subscription (new apollo-client)~~
 
 ## Browser APIs / Tools for APIs
 - Speech API
