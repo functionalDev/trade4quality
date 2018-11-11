@@ -1,6 +1,6 @@
 <template>
-  <section class="container">
-    <h1>Agenda</h1>
+  <section>
+    <Headline> Agenda </Headline>
     <table cellspacing="0">
       <thead>
         <th></th>
@@ -24,6 +24,7 @@
 
 <script>
 import gql from 'graphql-tag';
+import Headline from '~/components/Headline';
 const agenda = gql`
   {
     agenda: currentAgenda {
@@ -41,6 +42,9 @@ export default {
           members: '...',
         }],
       }
+    },
+    components: {
+      Headline,
     },
     // methods: {
     //   getMembers(card) {
@@ -76,6 +80,7 @@ export default {
 </script>
 
 <style scoped>
+
 table {
   text-align: left;
   min-width: 50vw;
@@ -97,30 +102,22 @@ td, th {
 td {
   border-top: 1px solid lightgrey;
 }
-  .container {
-    padding-top: 50px;
-    min-height: 100vh;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: center;
-    flex-direction: column;
-  }
-  tr.js {
-    background-image: linear-gradient(to left, transparent 80%, yellow);
-  }
-  tr.orga {
-    background-image: linear-gradient(to left, transparent 80%, grey);
-  }
-  tr.css {
-    background-image: linear-gradient(to left, transparent 80%, blue);
-  }
-  tr.html {
-    background-image: linear-gradient(to left, transparent 80%, orange);
-  }
-  .js .label > div{
-    color: black;
-  }
+
+tr.js {
+  background-image: linear-gradient(to left, transparent 80%, yellow);
+}
+tr.orga {
+  background-image: linear-gradient(to left, transparent 80%, grey);
+}
+tr.css {
+  background-image: linear-gradient(to left, transparent 80%, blue);
+}
+tr.html {
+  background-image: linear-gradient(to left, transparent 80%, orange);
+}
+.js .label > div{
+  color: black;
+}
   /* .js > div {
     background-color: yellow;
   }

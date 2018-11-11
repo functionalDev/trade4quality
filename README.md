@@ -25,8 +25,8 @@ Top Secret!! Don't look!! :P
   - ~~WebSocket~~
     - ~~only for Client mode~~
     - ~~SSR uses HTTP~~
-  - only use websocket for subscriptions
-    - other calls use GET/POST
+  - ~~only use websocket for subscriptions~~
+    - ~~other calls use GET/POST~~
   - cache websocket data?
 
 ### frontend

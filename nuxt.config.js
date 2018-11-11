@@ -1,10 +1,15 @@
-require('dotenv').config({ path: `.env${process.env.NODE_ENV === 'production' ? '.production' : ''}` });
+const envSuffix = () => process.env.NODE_ENV !== 'local' ? '.prod' : '';
+require('dotenv').config({ path: `.env${envSuffix()}` });
 
 module.exports = {
   /*
   ** Build configuration
   */
   build: {},
+  /*
+  ** plugins
+  */
+  plugins: [{ src: '~/plugins/lazyload', ssr: false }],
   /*
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
@@ -58,9 +63,6 @@ module.exports = {
         // You need to pass a `wsEndpoint` for this to work
         websocketsOnly: false, // Optional
       },
-      production: {
-        httpEndpoint: 'http://localhost:5000/graphql',
-      },
     },
   },
   oneSignal: {
@@ -71,6 +73,8 @@ module.exports = {
       welcomeNotification: {
         disable: false,
       },
+      requiresUserPrivacyConsent: false,
+      autoRegister: false,
     },
   },
 };

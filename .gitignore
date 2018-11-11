@@ -27,4 +27,4 @@ static/sw.js
 static/workbox-sw*.js
 
 # env
-.env.production
+.env.prod
